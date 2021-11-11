@@ -1,0 +1,26 @@
+<script>
+                window.onload = function(){
+                        $('string').onkeyup = function(){
+                            testar_string($('string'));
+                        }    
+                }
+                     
+                function $(id){
+                    return document.getElementById(id);
+                }
+                function testar_string(string){
+                    palavra = new RegExp('\^(([0-9|a-zA-Z]{0,32}))\$');
+                  (!palavra.test(string.value))?string.value = substStr(string,palavra):"";
+                  
+                }
+                function substStr(teste,regex){
+                    c = teste.value.length;
+                    str ="";    
+                    for(i=0; i<c ;i++){
+                        if(regex.test(teste.value[i]))
+                        str+=teste.value[i];
+                    }
+                    return str;
+                }
+</script>
+<input class="form-control" type="text" name="nome_paciente" value="" id="string" required style="text-transform: uppercase;">

@@ -9,7 +9,7 @@
                     return document.getElementById(id);
                 }
                 function testar_string(string){
-                    palavra = new RegExp('\^(([0-9|a-zA-Z]{0,32}))\$');
+                    palavra = new RegExp('\^(([0-9|a-zA-Z ]{0,32}))\$');
                   (!palavra.test(string.value))?string.value = substStr(string,palavra):"";
                   
                 }

@@ -1,5 +1,5 @@
 //Função para impedir que o usuário digite um valor indesejado.
-//Para usar, basta importar este arquivo no Html e adicionar um "onKeypress = limitcarc(event, TIPO)" ao input desejado.
+//Para usar, basta importar este arquivo no Html e adicionar um "onKeypress = return limitcarc(event, TIPO)" ao input desejado.
 //O parâmetro TIPO deve ser preenchido com:
 
 //letr_acent - Para letras com acentos
